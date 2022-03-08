@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: hsl(72, 2%, 79%);
+}
+.grid-container{
+    display: grid;
+    grid-gap: 10px;
+    height: 100vh;
+    grid-template-areas: 
+    'header header header header'
+    'formulario1  formulario1 formulario2 formulario2'
+    'formulario1  formulario1 formulario2 formulario2'
+    'footer footer footer footer'
+    ;
+    
+}
+.cabezera{
+    grid-area: header;
+    background: linear-gradient(to top, hsl(35, 93%, 54%), hsl(59, 97%, 51%));
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+
+.formulario1{
+    grid-area: formulario1;
+    width: 100%;
+ 
+}
+.formulario-padre{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    background: linear-gradient(to top, hsl(35, 93%, 54%), hsl(59, 97%, 51%));
+    
+   
+   
+}
+.formulario2{
+  
+    grid-area: formulario2;
+    width: 100%;
+   
+ 
+}
+textarea{
+    height: 95px;
+    width: 500px;
+}
+.pie{
+    grid-area: footer;
+    background: linear-gradient(to bottom, hsl(35, 93%, 54%), hsl(59, 97%, 51%));
+    text-align: center;
+   
+}
+
+.pie-pagina {
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+
+}
+.pie-pagina p a{
+    text-decoration: none;
+}
+.btn-inicio{
+    background: linear-gradient(to bottom, hsl(35, 93%, 54%), hsl(59, 97%, 51%));
+}
+    .btn-inicio a{
+        color: black;
+    }
+        .btn-inicio a:active{
+            background-color: hsl(35, 93%, 54%);
+        }
+@media all and (max-width: 800px) {
+    .grid-container{
+        display: grid;
+        grid-gap: 10px;
+        height: 100vh;
+        grid-template-areas: 
+        'header header header header'
+        'formulario1  formulario1 formulario1 formulario1'
+        'formulario2  formulario2 formulario2 formulario2'
+        'footer footer footer footer'
+        ;
+}
+    .formulario-padre{
+        margin-top: 10px;
+    }
+
+@media all and (max-width: 600px) {
+    .grid-container{
+        font-size: 0.5em;
+      
+      
+    }
+    .formulario-padre{
+        margin-top: none;
+    }
+    h2{
+       font-size: 1em;
+    }
+  
+    .btn-inicio{
+        font-size: 1em;
+    }
+    
+ }
+}

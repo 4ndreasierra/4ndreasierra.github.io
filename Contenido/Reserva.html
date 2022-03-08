@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Haz una reserva:</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Multimedia/favicon.ico">
+    <link rel="stylesheet" href="../CSS/formulario.css">
+    <script src="https://kit.fontawesome.com/6e3beeebf3.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+    <div class="cabezera"><h2>Realiza tu reserva:</h2></div>
+    <div class="pie"> <footer class="pie-pagina">
+        <p>© 2022 100% Italianos Pizzeria</p> 
+        <p> <a href="../Contenido/Politicas/Politica-de-privacidad.html" target="_blank">Politicas de privacidad</a>| <a href="../Contenido/Politicas/Protocolo-covid.html" target="_blank">Protocolo Covid</a></p>
+        <button class="btn-inicio" type="button"><a href="../index.html"><i class="fas fa-home">Volver al inicio</i></a></button>
+    </footer></div>
+    <div class="formulario1">
+        <div class="formulario-padre">
+        <form>
+            <fieldset>
+            <legend><strong>CONSUMO EN EL RESTAURANTE</strong></legend>
+            <label for="Name"><strong>Nombre:</strong></label>
+            <input type="text" id="name" name="name" >
+            <label for="second-name"><strong>Apellidos:</strong></label>
+            <input type="text" id="second-name" name="second-name" ><br><br>
+            <label for="Correo"><strong>Correo electrónico:</strong></label>
+            <input type="email" id="Correo" name="Correo" ><br><br>
+            <p><strong>Sexo:</strong>
+            <input type="radio" id="Hombre" name="1opcion">
+            <label for="Hombre">Hombre</label>
+            <input type="radio" id="Mujer" name="1opcion">
+            <label for="Mujer">Mujer</label>
+            <input type="radio" id="Prefiero no decirlo" name="1opcion">
+            <label for="Prefiero no decirlo">Prefiero no decirlo</label></p><br>
+            <label for="ndp"><strong>Número de personas para los que se quiere hacer la reserva:</strong></label>
+            <input type="number" id="ndp" name="ndp"><br><br>
+            <label for="hora"><strong>Hora:</strong></label>
+            <input type="text" id="hora" name="hora" placeholder="00:00"><br><br>
+            <label for="fecha"><strong>Fecha cuando se quiere hacer la reserva:</strong></label>
+            <input type="date" id="fecha" name="fecha"><br><br>
+            <label for="CA"><strong>¿Van a venir menores de edad?</strong></label>
+                <select name="CA" id="CA">
+                  <option value="Tipo1">Si</option>
+                  <option value="Tipo2">No</option>
+                </select><br><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Cancelar">
+        </fieldset>
+        </form></div></div>
+    <div class="formulario2">
+        <div class="formulario-padre">
+        <form>
+        <fieldset>
+        <legend><strong>PARA LLEVAR:</strong></legend>
+        <label for="Name"><strong>Nombre:</strong></label>
+        <input type="text" id="name" name="name" >
+        <label for="second-name"><strong>Apellidos:</strong></label>
+        <input type="text" id="second-name" name="second-name" ><br><br>
+        <label for="Correo"><strong>Correo electrónico:</strong></label>
+        <input type="email" id="Correo" name="Correo" ><br><br>
+        <p><strong>Sexo:</strong>
+        <input type="radio" id="Hombre" name="1opcion">
+        <label for="Hombre">Hombre</label>
+        <input type="radio" id="Mujer" name="1opcion">
+        <label for="Mujer">Mujer</label>
+        <input type="radio" id="Prefiero no decirlo" name="1opcion">
+        <label for="Prefiero no decirlo">Prefiero no decirlo</label></p><br>
+        <p><strong>Indique los tipos de productos que va a pedir:</p></strong>
+        <input type="checkbox" id="pizzas" name="comida">
+        <label for="pizzas">Pizzas</label>
+        <input type="checkbox" id="pasta" name="comida">
+        <label for="pasta">Pasta</label>
+        <input type="checkbox" id="calzone" name="comida">
+        <label for="calzone">Calzone clasico</label>
+        <input type="checkbox" id="pasta" name="bebida">
+        <label for="pasta">Bebidas</label><br>
+        <label for="Comentario"><strong>Comentario:</strong></label>
+            <textarea id="Comentario" name="Comentario" placeholder="Escribe todos los productos que quiera pedir.." ></textarea><br><br>
+    </p>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Cancelar">
+    </fieldset>
+</form></div></div></div>
+    
+
+
+  
+
+</body>
+
+</html>
