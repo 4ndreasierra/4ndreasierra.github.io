@@ -160,13 +160,13 @@ label {
 }
 
 
-/*Carta de otros productos con flexbox*/
+/*Párrafo principal*/
 
 .caja-padre {
     width: 90%;
     margin: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 h2 {
@@ -187,8 +187,21 @@ h2 {
     width: 100%;
 }
 
-
-
+/*Carrusel de fotos con texto tipo slider*/
+.imagenes-restaurante-padre{
+    display:flex;
+}
+#imagen-restaurante{
+    width: 100%;
+    margin: 10px;
+    height: 380px;
+   
+}
+#imagen-restaurante2{
+    width: 100%;
+    margin: 10px;
+    height: 380px;
+}
 
 /*Pie de pagina*/
 
@@ -314,5 +327,19 @@ h2 {
     }
     .btn-reserva{
         font-size: 1em;
+    }
+    .imagenes-restaurante-padre{
+        flex-direction: column;
+    }
+    #imagen-restaurante{
+        width: 100%;
+        margin: 10px;
+        height: 380px;
+       
+    }
+    #imagen-restaurante2{
+        width: 100%;
+        margin: 10px;
+        height: 380px;
     }
 }
