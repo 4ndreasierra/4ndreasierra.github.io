@@ -72,10 +72,10 @@
         
         #menu-principal ul li a:hover {
             font-size: 20px;
+            background-color: hsl(35, 93%, 54%);
         }
         
         #menu-principal ul li a:active {
-            background-color: hsl(35, 93%, 54%);
             color: hsl(0, 0%, 100%);
         }
         
