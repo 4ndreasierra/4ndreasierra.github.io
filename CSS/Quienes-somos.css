@@ -1,0 +1,318 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Supermercado One', cursive;
+    background: hsl(72, 2%, 79%)
+}
+
+.cabezera {
+    background: linear-gradient(to top, hsl(35, 93%, 54%), hsl(59, 97%, 51%));
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+
+/*caja principal del menu de navegacion*/
+
+.padre-menu-navegacion {
+    background-color: hsla(34, 94%, 49%, .1);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+input {
+    display: none;
+}
+
+label {
+    display: none;
+}
+
+.logo {
+    flex: 1 1 auto;
+    align-items: center;
+    flex-direction: row;
+}
+
+#imagen-contenido {
+    width: 20%;
+    margin: 20px 20px;
+}
+
+.menu-navegacion {
+    flex: 1 1 auto;
+    margin: 1px;
+    padding: 1px;
+}
+
+#menu-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+#menu-principal ul li {
+    display: inline-block;
+    padding: 1px;
+    margin: 1px;
+}
+
+#menu-principal ul li a {
+    color: hsl(26, 99%, 51%);
+    text-decoration: none;
+    list-style: none;
+    letter-spacing: 1px;
+}
+
+#menu-principal ul li a:hover {
+    font-size: 20px;
+    background-color: hsl(35, 93%, 54%);
+}
+
+#menu-principal ul li a:active {
+    color: hsl(0, 0%, 100%);
+}
+
+.redes-sociales-padre {
+    flex: 1 1 auto;
+}
+
+.redes-sociales {
+    font-size: 20px;
+    padding: 5px;
+}
+
+#instagram {
+    color: hsl(263, 82%, 59%);
+}
+
+#instagram:active {
+    color: hsl(0, 0%, 100%);
+}
+
+#instagram:hover {
+    font-size: 25px;
+}
+
+#facebook {
+    color: hsl(240, 82%, 59%)
+}
+
+#facebook:active {
+    color: hsl(0, 0%, 100%);
+}
+
+#facebook:hover {
+    font-size: 25px;
+}
+
+
+/*Contenido Principal página*/
+
+
+/*Redes sociales barra lateral*/
+
+.rs-bar {
+    position: fixed;
+    right: 0;
+    top: 80%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 1;
+    display: none;
+}
+
+.redes {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 10px;
+    transition: all .5s;
+}
+
+.facebook {
+    background-color: blue;
+    font-size: 20px;
+}
+
+.instagram {
+    background-image: linear-gradient(to top, yellow, purple);
+    font-size: 20px;
+}
+
+.icono:first-child {
+    border-radius: 10px 0 0 0;
+}
+
+.icono:last-child {
+    border-radius: 0 0 0 10px;
+}
+
+.redes:hover {
+    padding-right: 35px;
+}
+
+
+/*Carta de otros productos con flexbox*/
+
+.caja-padre {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+h2 {
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    background-color: hsl(26, 99%, 51%);
+}
+
+.caja-contenido {
+    padding: 10px;
+    border: 3px solid hsl(0, 0%, 0%);
+    width: 30%;
+    background-color: hsl(0, 0%, 100%);
+    margin: 10px;
+    margin-bottom: 25px;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+
+/*Pie de pagina*/
+
+.pie-pagina {
+    background: linear-gradient(to bottom, hsl(35, 93%, 54%), hsl(59, 97%, 51%));
+    text-align: center;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+.pie-pagina p a{
+    text-decoration: none;
+}
+
+.btn-reserva{
+    background-color: hsl(59, 97%, 51%);
+}
+
+    .btn-reserva a{
+        text-decoration: none;
+        color:hsl(0, 0%, 0%)
+    }
+    .btn-reserva:active{
+        background-color: hsl(26, 99%, 51%);
+    }
+
+
+/*Adaptabilidad de dispositivos*/
+
+@media all and (max-width: 800px) {
+    .logo {
+        display: none;
+    }
+    #menu-principal ul li {
+        flex-direction: row;
+    }
+    .caja-contenido {
+        font-size: 12px;
+       
+    }
+    .redes-sociales {
+        display: none;
+    }
+    .rs-bar {
+        display: flex;
+        flex-direction: column;
+        top: 45%;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .cajas-contenido {
+        font-size: 0.4em;
+     
+    }
+    label {
+        display: block;
+    }
+    input {
+        display: block;
+    }
+    .logo {
+        display: none;
+    }
+    .redes-sociales {
+        display: none;
+    }
+    .rs-bar {
+        top: 0%;
+    }
+    #instagram:hover {
+        font-size: 20px;
+    }
+    #facebook:hover {
+        font-size: 20px;
+    }
+    #menu-principal {
+        position: absolute;
+        width: 90%;
+        background: white;
+        top: 50px;
+        left: -100%;
+        transition: left .5s;
+    }
+    #menu-principal ul li {
+        width: 100%;
+        line-height: 90px;
+        text-align: center;
+        border: 1px solid white;
+        background: orange;
+    }
+    #menu-principal ul li a {
+        color: white;
+    }
+    span:hover {
+        color: white;
+    }
+    #label-menu span {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        cursor: pointer;
+    }
+    #btn-menu {
+        display: none;
+    }
+    #btn-menu:checked~#menu-principal {
+        left: 0px;
+    }
+    .redes-sociales {
+        display: none;
+    }
+    .rs-bar {
+        display: flex;
+        flex-direction: column;
+        top: 0%;
+        position: absolute;
+    }
+    .pie-pagina{
+        position: fixed;
+        font-size: 0.5em;
+    }
+    .btn-reserva{
+        font-size: 1em;
+    }
+}
